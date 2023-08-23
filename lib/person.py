@@ -35,11 +35,30 @@ class Person:
         if  not (isinstance(new_name, str) and 1 <= len(new_name) <= 25):
          print("Name must be a string between 1 and 25 characters.")
         else:
-           self.name = new_name
+           self._name = new_name
 
     @job.setter
     def job(self, new_job):
         if new_job not in  Person.APPROVED_JOBS:
          print("Job must be in list of approved jobs." )
+        else:
+         self._job = new_job
+
+
+person = Person("Gwen", "Finance")
+print(f"Person's name: {person.name}")
+print(f"Person's job: {person.job}")
+
+person.name = "Max"
+person.job = "Education"
+
+print(f"Person's name: {person.name}")
+print(f"Person's job: {person.job}")
+
+person.name = "Wolfeschlegelsteinhausenbergerdorff,"
+person.job = "Production"
+
+print(f"Person's name: {person.name}")
+print(f"Person's job: {person.job}")
        
            
