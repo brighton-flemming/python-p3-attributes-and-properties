@@ -17,7 +17,7 @@ class Dog:
    def __init__(self, name="", breed=""):
       self._name = name
       self._breed = breed
-   
+     
    @property
    def name(self):
       return self._name 
@@ -29,7 +29,7 @@ class Dog:
    @name.setter
    def name(self, another_name):
       if not (isinstance(another_name, str) and 1 <= len(another_name) <= 25):
-         print("Name must be a string between 1 and 25 characters.")
+         print("Name must be string between 1 and 25 characters.")
   
       else:
           self._name = another_name
@@ -57,6 +57,25 @@ dog.breed = "Chihuahua"
 print(f"Dog's name: {dog.name}")
 print(f"Dog's breed: {dog.breed}")
 
+dog.name = ""
+dog.breed = "German Shepherd"
+
+print(f"Dog's name: {dog.name}")
+print(f"Dog's breed: {dog.breed}")
+
+
+dog.name = "This is a very long name for a dog"
+dog.breed = "French Bulldog"
+
+print(f"Dog's name: {dog.name}")
+print(f"Dog's breed: {dog.breed}")
+
+
+dog.name = 12345
+dog.breed = "Rottweiler"
+
+print(f"Dog's name: {dog.name}")
+print(f"Dog's breed: {dog.breed}")
 
 
     

@@ -3,6 +3,7 @@
 from dog import Dog
 
 import io
+import unittest
 import sys
 
 class TestDog:
