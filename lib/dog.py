@@ -14,7 +14,7 @@ class Dog:
  ]
    
 
-   def __init__(self, name, breed):
+   def __init__(self, name="", breed=""):
       self._name = name
       self._breed = breed
    
@@ -41,7 +41,7 @@ class Dog:
       else:
         self._breed = new_breed
 
-dog = Dog("Buddy", "Golden Retriever")
+dog = Dog(name="Buddy", breed="Golden Retriever")
 print(f"Dog's name: {dog.name}")
 print(f"Dog's breed: {dog.breed}")
 

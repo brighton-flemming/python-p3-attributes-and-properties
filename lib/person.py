@@ -18,7 +18,7 @@ class Person:
     "Purchasing"
 ]
 
-    def __init__(self, name, job):
+    def __init__(self, name="", job=""):
         self._name = name
         self._job = job
         
@@ -45,7 +45,7 @@ class Person:
          self._job = new_job
 
 
-person = Person("Gwen", "Finance")
+person = Person(name="Gwen", job="Finance")
 print(f"Person's name: {person.name}")
 print(f"Person's job: {person.job}")
 
