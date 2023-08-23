@@ -10,8 +10,8 @@ class TestDog:
 
     def test_is_class(self):
         '''is a class with the name "Dog".'''
-        pluto = Dog()
-        assert(type(pluto) == Dog)
+        fido = Dog()
+        assert(type(fido) == Dog)
         
     def test_name_not_empty(self):
         '''prints "Name must be string between 1 and 25 characters." if empty string.'''
